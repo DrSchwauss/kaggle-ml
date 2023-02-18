@@ -1,0 +1,9 @@
+exec_load_data :
+  train_test_split : 
+    train_size : 0.8
+
+exec_feature_engineering :
+  name : fe_1
+  parameters : 
+    selected_features : ["Sex", "Age"]
+    target_variable : ["Survived"]
